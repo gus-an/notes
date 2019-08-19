@@ -64,3 +64,16 @@ mv RED README.txt README
 git rm README.txt
 git add README
 ```
+
+## PUSH
+(다른 가지를 발행하려면 master를 원하는 가지 이름으로 바꿔주세요.) 
+```
+git push origin master
+```
+
+## REMOTE
+만약 기존에 있던 원격 저장소를 복제한 것이 아니라면,
+원격 서버의 주소를 git에게 알려줘야 해요.
+```
+git remote add origin <원격 서버 주소>
+```
