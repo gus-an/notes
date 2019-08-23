@@ -1,0 +1,23 @@
+Jenkins
+LESSON 1
+  - java application : platform
+  - used for continuous integration and contitnuous delivery
+  - 여러 사람이 협업을 할 때, 코드를 commit 하면 바로 빌드해서 에러를 기록한다
+  - 빌드는 성공하더라도, 테스트를 실행할 수 있다. 자동으로
+  - 이것이 continuous integration : 코드가 변경될 때마다 모든 사이클이 실행된다.
+
+Step 1. download jenkins
+Step 2. place the downloaded file (.war) on any location on your system
+Step 3. go to command prompt 
+  - go to folder where jenkins is
+  - java -jar jenkins.war
+  - copy the password for admin : 44fe4bd8baea4ed5bb7749bcc9a9153c
+  - C:\Users\Jinwoo\.jenkins\secrets\initialAdminPassword
+Step 4. go to browser : http:///localhost:8080
+Step 5. select plugins we want (skipped)
+Step 6. continue as admin
+
+C:\Users\Jinwoo\.jenkins 에 다운로드된 플러그인들을 확인할 수 있다.
+
+LESSON 2
+
