@@ -1,5 +1,6 @@
 Jenkins
-LESSON 1
+
+LESSON 1 (Starting Jenkins)
   - java application : platform
   - used for continuous integration and contitnuous delivery
   - 여러 사람이 협업을 할 때, 코드를 commit 하면 바로 빌드해서 에러를 기록한다
@@ -19,5 +20,20 @@ Step 6. continue as admin
 
 C:\Users\Jinwoo\.jenkins 에 다운로드된 플러그인들을 확인할 수 있다.
 
-LESSON 2
+LESSON 2 (How to setup Jenkins on Tomcat)
 
+- Why should we deploy jenkins on tomcat?
+  jetty/winstone 를 이용하면 Jenkins standalone 서버에서 구동할 수도 있지만
+  Tomcat 을 이용하면 하나의 서버에 모든 App을 구동할 수 있다.
+
+***Tomcat 5 or above
+***Java 7 or above
+
+Step 1. Download Tomcat
+  - https://tomcat.apache.org/download-80.cgi
+  - download zip
+Step 2. unzip at any location
+Step 3. Copy/Place the jenkins.war file inside tomcat/webapp
+Step 4. Goto cmd
+  - goto tomcat/bin
+  - make all file executable : chmod +x *.sh`
