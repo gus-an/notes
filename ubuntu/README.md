@@ -73,3 +73,14 @@ sudo vi /etc/fstab
 ajw /usr/projects/ajw vboxsf defaults 0 0
 ```
 ![sf_mount_3](./Figures/sf_mount_3.png)
+
+## 1.3. TroubleShoot
+
+## 1.3.1. SSH timeout
+
+SSH port is set through firewall rules, but sometimes it fails.
+
+```
+sudo apt-get install ufw
+sudo ufw allow ssh
+```

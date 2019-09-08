@@ -3,12 +3,15 @@
 import socket
 
 HOST = '127.0.0.1'      # standard loopback interface address (localhost)
+#HOST = ''
 PORT = 65432            # port to listen on (non-priviledged ports are > 1023)
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOST, PORT))
     s.listen()
+    print('listening...')	
     conn, addr = s.accept()
+    print('accepted!')
     with conn:
         print('Connected by', addr)
         while True:
