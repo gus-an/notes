@@ -77,3 +77,42 @@ git push origin master
 ```
 git remote add origin <원격 서버 주소>
 ```
+
+## MERGE
+```
+git checkout master
+git merge submit
+```
+master 브랜치에서 submit 에 대한 내용들 가져오기
+
+Git Merge 해서 act1 에 있었던 내용들을 가져왔다
+```
+git push origin master
+```
+머지해서 remote 에 푸시해도, 애초에 commit 하지 않은 파일들을 remote 에 반영되지 않는다.
+
+## delete branch
+수정내용 여부 확인
+```
+git checkout submit
+git status
+```
+추가할 것 있으면 하기
+```
+git add -A
+git commit -m "added all"
+```
+다른 브랜치에서 머지
+```
+git checkout master
+git merge submit
+```
+브랜치 삭제
+```
+git branch -d submit
+```
+
+## delete remote branch
+```
+git push origin :submit 
+```
