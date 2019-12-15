@@ -34,3 +34,4 @@ Host ubuntu_host
   HostName 35.223.9.77
   User gus_an
 ```
+- KEY POINT : delete `config` file in the `C:\Users\username\.ssh` directory!
